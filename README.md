@@ -1,3 +1,3 @@
 ﻿# Gamer-room
  
- - Em breve Readme .
+ - Em breve Readme ..
