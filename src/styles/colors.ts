@@ -1,3 +1,6 @@
 export default {
-  purple: '#0C0C24'
+  darkenGrey: '#171717',
+  darkGrey: '#1D1D1D',
+  snow: '#EEEEEE',
+  white: '#FFF'
 }
