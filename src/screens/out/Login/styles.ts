@@ -21,3 +21,8 @@ export const ButtonText = styled.Text`
   color: #fff;
   text-align: center;
 `
+
+export const IconsContainer = styled.View`
+  display: flex;
+  width: 100%;
+`
