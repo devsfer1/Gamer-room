@@ -1,5 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { 
+  StyleSheet, 
+  Text, 
+  View, 
+  Image ,
+  Flex
+} 
+from 'react-native';
 
 import { Container, Button, ButtonText, IconsContainer } from './styles';
 
@@ -13,6 +20,7 @@ const twitterLogo = require('../../../assets/images/tt-logo.png')
 
 export function LoginPage() {
   return (
+    <>
     <Container>
       <Image source={logoImg} width={10}/>
       <Button >
@@ -24,13 +32,15 @@ export function LoginPage() {
         <ButtonText>
           REGISTER NOW
         </ButtonText>
-      </Button>
-        <IconsContainer>
-          <Image source={fbLogo} width={3} />
-          <Image source={twitterLogo}/>
-          <Image source={googleLogo}/>
-        </IconsContainer>
+      </Button> 
+      <Flex>
+        <Image source={fbLogo} width={100} />
+        <Image source={twitterLogo} width={100} />
+        <Image source={googleLogo}/>
+      </Flex>   
     </Container>
+    </>
+    
   )
 }
 
