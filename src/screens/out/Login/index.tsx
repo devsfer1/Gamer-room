@@ -4,7 +4,6 @@ import {
   Text, 
   View, 
   Image ,
-  Flex
 } 
 from 'react-native';
 
@@ -14,7 +13,7 @@ import colors from '../../../styles/colors'
 
 const logoImg = require('../../../assets/images/logo.png')
 
-const fbLogo = require('../../../assets/images/fb-logo.png')
+const fbLogo = require ('../../../assets/images/fb-logo.png')
 const googleLogo = require('../../../assets/images/google-logo.png')
 const twitterLogo = require('../../../assets/images/tt-logo.png')
 
@@ -22,7 +21,7 @@ export function LoginPage() {
   return (
     <>
     <Container>
-      <Image source={logoImg} width={10}/>
+      <Image source={logoImg} style={{ width: 400, height: 450 }}/>
       <Button >
         <ButtonText>
           LOGIN
@@ -33,20 +32,14 @@ export function LoginPage() {
           REGISTER NOW
         </ButtonText>
       </Button> 
-      <Flex>
-        <Image source={fbLogo} width={100} />
-        <Image source={twitterLogo} width={100} />
-        <Image source={googleLogo}/>
-      </Flex>   
+        <IconsContainer>
+          <Image source={fbLogo} style={{ width: 80, height: 80 }} />
+          <Image source={twitterLogo} style={{ width: 80, height: 80 }} />
+          <Image source={googleLogo} style={{ width: 80, height: 80 }} />
+        </IconsContainer>
+        
     </Container>
     </>
     
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.darkGrey
-  }
-})

@@ -24,5 +24,9 @@ export const ButtonText = styled.Text`
 
 export const IconsContainer = styled.View`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
+  height: 60px;
 `

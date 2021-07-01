@@ -6,7 +6,9 @@ import { LoginPage } from './src/screens/out/Login'
 
 export default function App() {
   return (
+    <>
     <LoginPage />
+    </>
   );
 }
 
