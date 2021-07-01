@@ -4,6 +4,7 @@ import {
   Text, 
   View, 
   Image ,
+  TouchableOpacity
 } 
 from 'react-native';
 
@@ -27,15 +28,17 @@ export function LoginPage() {
           LOGIN
         </ButtonText>
       </Button>
-      <Button >
+      
+        <Button >
         <ButtonText>
           REGISTER NOW
         </ButtonText>
       </Button> 
+      
         <IconsContainer>
-          <Image source={fbLogo} style={{ width: 80, height: 80 }} />
-          <Image source={twitterLogo} style={{ width: 80, height: 80 }} />
-          <Image source={googleLogo} style={{ width: 80, height: 80 }} />
+          <Image source={fbLogo} style={{ width: 70, height: 70, shadowColor: "0px 4px 4px rgba(0, 0, 0, 0.25);" }} />
+          <Image source={twitterLogo} style={{ width: 70, height: 70 }} />
+          <Image source={googleLogo} style={{ width: 70, height: 70 }} />
         </IconsContainer>
         
     </Container>
