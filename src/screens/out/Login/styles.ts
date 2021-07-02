@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 
 import colors from '../../../styles/colors';
+import fonts from '../../../styles/fonts'
 
 export const Container = styled.View`
   flex: 1;
@@ -10,19 +11,19 @@ export const Container = styled.View`
 
 export const Button = styled.TouchableOpacity`
   padding: 15px 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: ${colors.darkGrey};
-  width: 75%;
+  width: 85%;
   text-align: center;
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.9) 0px 8px 90px;
 `
 export const ButtonText = styled.Text`
   color: #fff;
   text-align: center;
+  font-family: ${fonts.text};
 `
 export const IconsContainer = styled.View`
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
