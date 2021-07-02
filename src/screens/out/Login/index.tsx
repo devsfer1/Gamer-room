@@ -18,7 +18,7 @@ const fbLogo = require ('../../../assets/images/fb-logo.png')
 const googleLogo = require('../../../assets/images/google-logo.png')
 const twitterLogo = require('../../../assets/images/tt-logo.png')
 
-export function LoginPage() {
+export default function LoginScreen() {
   return (
     <>
     <Container>

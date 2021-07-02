@@ -1,9 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
+
 import React from 'react';
 import AppLoading from 'expo-app-loading';
 import { useFonts, OpenSans_600SemiBold } from '@expo-google-fonts/open-sans';
 
-import { LoginPage } from './src/screens/out/Login'
+import Routes from './src/routes/'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -14,9 +15,8 @@ export default function App() {
     return <AppLoading />
 
   return (
-    <>
-    <LoginPage />
-    </>
+    <Routes />
   );
 }
+
 
