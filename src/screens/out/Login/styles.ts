@@ -15,12 +15,12 @@ export const Button = styled.TouchableOpacity`
   width: 75%;
   text-align: center;
   border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.9) 0px 8px 90px;
 `
 export const ButtonText = styled.Text`
   color: #fff;
   text-align: center;
 `
-
 export const IconsContainer = styled.View`
   margin-top: 20px;
   display: flex;
@@ -28,5 +28,5 @@ export const IconsContainer = styled.View`
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  height: 60px;
+  
 `
